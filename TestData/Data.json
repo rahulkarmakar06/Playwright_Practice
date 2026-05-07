@@ -1,0 +1,17 @@
+[
+{
+    "Email": "test@example.com",
+    "password": "password123",
+    "Status": "Valid"
+},
+{
+    "Email": "invalid-email",
+    "password": "password123",
+    "Status": "Invalid"
+},
+{
+    "Email": "valid-email",
+    "password": "InvalidPassword",
+    "Status": "Invalid"
+}
+]
