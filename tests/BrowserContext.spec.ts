@@ -37,3 +37,9 @@ test.only('Tab Haldling', async ({page, context})=> {
     await page.waitForTimeout(5000);
     
 });
+
+test('Practice', async ({page,context})=> {
+    const[newpage] = await Promise.all([context.waitForEvent('page'), await page.locator('loc').click()]);
+
+    await newpage.waitForLoadState('networkidle');
+});
